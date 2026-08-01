@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+*.log
+
+backend/securebank.db
+backend/securebank.db-shm
+backend/securebank.db-wal
+backend/*.test.db
+backend/*.test.db-shm
+backend/*.test.db-wal
+coverage/
+
+.env
+.DS_Store
