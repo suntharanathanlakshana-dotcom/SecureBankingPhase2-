@@ -1,0 +1,36 @@
+{
+  "name": "securebank-backend",
+  "version": "1.0.0",
+  "description": "SecureBank — Duothan 6.0 Phase 2 backend (microservice-style modular monolith demo)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "cross-env NODE_ENV=test jest --runInBand",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@simplewebauthn/server": "^10.0.1",
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.6.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"],
+    "verbose": true
+  }
+}
